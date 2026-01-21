@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velvet Vogue - Premium Fashion Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>VELVET VOGUE</h1>
+                <p>Premium Fashion</p>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>New Collection 2026</h2>
+            <p>Discover the latest trends in fashion</p>
+            <a href="products.html" class="btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div id="featured-products" class="product-grid">
+                <!-- Products will load here from JavaScript -->
+                <div class="loading">Loading products...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories-section">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="images\women's fa.jpg" alt="Women's Fashion">
+                    <h3>Women's Fashion</h3>
+                    <a href="products.html?gender=Women" class="btn-secondary">Shop Women</a>
+                </div>
+                <div class="category-card">
+                    <img src="images\men's fa.jpg" alt="Men's Fashion">
+                    <h3>Men's Fashion</h3>
+                    <a href="products.html?gender=Men" class="btn-secondary">Shop Men</a>
+                </div>
+                <div class="category-card">
+                    <img src="images\accesories.jpg" alt="Accessories">
+                    <h3>Accessories</h3>
+                    <a href="products.html?category=Accessories" class="btn-secondary">Shop Accessories</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Velvet Vogue</h3>
+                <p>Your destination for premium fashion and style. Quality clothing and accessories for the modern individual.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@velvetvogue.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Fashion Ave, NY 10001</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Velvet Vogue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

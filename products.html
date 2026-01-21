@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Velvet Vogue</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>VELVET VOGUE</h1>
+                <p>Premium Fashion</p>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" class="active">Shop</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PRODUCTS PAGE -->
+    <section class="products-page">
+        <div class="container-wide">
+            <div class="page-title">
+                <h1>Our Products</h1>
+                <p>Explore our collection of premium fashion</p>
+            </div>
+
+            <div class="products-layout">
+                <!-- FILTERS SIDEBAR -->
+                <aside class="filters-sidebar">
+                    <h3>Filter Products</h3>
+                    
+                    <!-- Gender Filter -->
+                    <div class="filter-group">
+                        <h4>Gender</h4>
+                        <label><input type="checkbox" name="gender" value="Men"> Men</label>
+                        <label><input type="checkbox" name="gender" value="Women"> Women</label>
+                        <label><input type="checkbox" name="gender" value="Unisex"> Unisex</label>
+                    </div>
+
+                    <!-- Category Filter -->
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <label><input type="checkbox" name="category" value="Dresses"> Dresses</label>
+                        <label><input type="checkbox" name="category" value="Shirts"> Shirts</label>
+                        <label><input type="checkbox" name="category" value="Pants"> Pants</label>
+                        <label><input type="checkbox" name="category" value="Jackets"> Jackets</label>
+                        <label><input type="checkbox" name="category" value="Accessories"> Accessories</label>
+                        <label><input type="checkbox" name="category" value="Shoes"> Shoes</label>
+                    </div>
+
+                    <!-- Price Filter -->
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <label><input type="checkbox" name="price" value="0-100"> Under $100</label>
+                        <label><input type="checkbox" name="price" value="100-200"> $100 - $200</label>
+                        <label><input type="checkbox" name="price" value="200-300"> $200 - $300</label>
+                        <label><input type="checkbox" name="price" value="300-500"> $300 - $500</label>
+                    </div>
+
+                    <button id="apply-filters" class="btn-primary">Apply Filters</button>
+                    <button id="clear-filters" class="btn-secondary">Clear All</button>
+                </aside>
+
+                <!-- PRODUCTS GRID -->
+                <div class="products-main">
+                    <div class="products-header">
+                        <p id="products-count">Showing all products</p>
+                        <select id="sort-products">
+                            <option value="default">Sort by: Default</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+
+                    <div id="products-container" class="product-grid">
+                        <!-- Products will load here -->
+                        <div class="loading">Loading products...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Velvet Vogue</h3>
+                <p>Your destination for premium fashion and style.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@velvetvogue.com</p>
+                <p>Phone: +94 71 111 1111</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Velvet Vogue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+</body>
+</html>

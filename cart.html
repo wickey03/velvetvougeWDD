@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Velvet Vogue</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>VELVET VOGUE</h1>
+                <p>Premium Fashion</p>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                    <li><a href="cart.html" class="active">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CART PAGE -->
+    <section class="cart-page">
+        <div class="container">
+            <h1>Shopping Cart</h1>
+
+            <div class="cart-layout">
+                <!-- CART ITEMS -->
+                <div class="cart-items">
+                    <div id="cart-container">
+                        <!-- Cart items will load here -->
+                        <p class="empty-cart">Your cart is empty</p>
+                    </div>
+                </div>
+
+                <!-- CART SUMMARY -->
+                <div class="cart-summary">
+                    <h3>Order Summary</h3>
+                    
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">$0.00</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="shipping">$10.00</span>
+                    </div>
+                    
+                    <div class="summary-row">
+                        <span>Tax (8%):</span>
+                        <span id="tax">$0.00</span>
+                    </div>
+                    
+                    <hr>
+                    
+                    <div class="summary-row total">
+                        <span><strong>Total:</strong></span>
+                        <span id="total"><strong>$0.00</strong></span>
+                    </div>
+
+                    <button id="checkout-btn" class="btn-primary btn-full">Proceed to Checkout</button>
+                    <a href="products.html" class="btn-secondary btn-full">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Velvet Vogue</h3>
+                <p>Your destination for premium fashion and style.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@velvetvogue.com</p>
+                <p>Phone: +94 71 333 3333</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Velvet Vogue. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
