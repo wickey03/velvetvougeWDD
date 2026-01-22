@@ -110,20 +110,17 @@ function applyFilters() {
     const genderCheckboxes = document.querySelectorAll('input[name="gender"]:checked');
     for (let i = 0; i < genderCheckboxes.length; i++) {
         genderFilters.push(genderCheckboxes[i].value);
-    }
-    
+    } 
     const categoryFilters = [];
     const categoryCheckboxes = document.querySelectorAll('input[name="category"]:checked');
     for (let i = 0; i < categoryCheckboxes.length; i++) {
         categoryFilters.push(categoryCheckboxes[i].value);
-    }
-    
+    } 
     const priceFilters = [];
     const priceCheckboxes = document.querySelectorAll('input[name="price"]:checked');
     for (let i = 0; i < priceCheckboxes.length; i++) {
         priceFilters.push(priceCheckboxes[i].value);
-    }
-    
+    }   
     if (genderFilters.length > 0) {
         filteredProducts = filteredProducts.filter(function(product) {
             for (let i = 0; i < genderFilters.length; i++) {
@@ -133,8 +130,7 @@ function applyFilters() {
             }
             return false;
         });
-    }
-    
+    }  
     if (categoryFilters.length > 0) {
         filteredProducts = filteredProducts.filter(function(product) {
             for (let i = 0; i < categoryFilters.length; i++) {
@@ -144,8 +140,7 @@ function applyFilters() {
             }
             return false;
         });
-    }
-    
+    } 
     if (priceFilters.length > 0) {
         filteredProducts = filteredProducts.filter(function(product) {
             const price = product.sale_price || product.price;
