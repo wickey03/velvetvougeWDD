@@ -1,5 +1,4 @@
 <?php
-// VELVET VOGUE - Get Products with Debugging
 
 // Enable error reporting
 error_reporting(E_ALL);
